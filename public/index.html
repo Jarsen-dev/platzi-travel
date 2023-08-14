@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <link href="./css/tailwind.css" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav></nav>
+    <div id="tab_bar"></div>
+  </header>
+  <main>
+    <section class="w-full h-screen">
+      <div id="home">
+        <div class="w-full h-3/4">
+          <div class="w-full h-full flex flex-col absolute space-y-96 p-4 items-center">
+            <input class="outline-none p-3 rounded-full shadow-sm" placeholder="San Francisco" type="search" name="" id="">
+            <button class="w-36 h-10 rounded-full text-xl text-primary shadow-sm font-semibold bg-white">Explore More</button>
+          </div>
+          <div class="w-full h-full">
+            <img src="./img/sanFrancisco.jpg" alt="san francisco">
+          </div>
+        </div>
+      </div>
+      <div class="p-20 flex flex-row gap-8" id="recomendations">
+        <h2>Our Recomdations</h2>
+        <div class="w-48 h-64 shadow-md rounded-lg">
+          <div class="w-full h-3/5 rounded-t-lg bg-norway bg-cover"></div>
+          <div class="w-full h-2/5 bg-secondary rounded-b-lg p-3">
+            <h3 class="text-white font-bold text-xl">Norway</h3>
+            <p class="text-white font-light text-md">Beautiful landscapes</p>
+          </div>
+        </div>
+        <div class="w-48 h-64 shadow-md rounded-lg">
+          <div class="w-full h-3/5 rounded-t-lg bg-norway bg-cover"></div>
+          <div class="w-full h-2/5 bg-secondary rounded-b-lg p-3">
+            <h3 class="text-white font-bold text-xl">Norway</h3>
+            <p class="text-white font-light text-md">Beautiful landscapes</p>
+          </div>
+        </div>
+      </div>
+      <div id="featured_rentals"></div>
+      <div id="faqs"></div>
+    </section>
+  </main>
+  <footer>
+    <div id="about_us"></div>
+  </footer>
+</body>
+</html>
