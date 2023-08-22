@@ -1,3 +1,60 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .nav div:nth-child(1) p {
+    @apply text-lg font-semibold text-primary dark:text-white;
+  }
+  .nav div:nth-child(2) a {
+    @apply text-lg font-semibold text-primary hover:border-b-2 hover:border-[#CC2D4A] dark:text-white dark:hover:border-white ;
+  }
+  .card {
+    @apply w-48 h-64 shadow-md rounded-lg flex-none transition-all hover:-translate-y-4;
+  }
+  .card div:nth-child(1) {
+    @apply w-full h-3/5 rounded-t-lg bg-cover;
+  }
+  .card div:nth-child(2) {
+    @apply w-full h-2/5 rounded-b-lg p-3;
+  }
+  .odd {
+    @apply bg-secondary dark:bg-gray-700;
+  }
+  .even {
+    @apply bg-white dark:bg-gray-800;
+  }
+  .even h3 {
+    @apply text-tertiary dark:text-white;
+  }
+  .odd p, .even p {
+    @apply dark:text-gray-300;
+  }
+  .card div:nth-child(2) h3 {
+    @apply font-semibold text-xl;
+  }
+  .card div:nth-child(2) p {
+    @apply font-normal text-sm pt-1;
+  }
+  .h2 {
+    @apply text-primary font-semibold text-3xl dark:text-white;
+  }
+  .card-trending {
+    @apply w-full h-[26rem] bg-cover rounded-2xl lg:h-full lg:bg-center;
+  }
+  .card-trending h3 {
+    @apply text-3xl px-8 pt-8 pb-2 font-semibold text-white;
+  }
+  .card-trending p {
+    @apply text-base pl-8 text-white font-medium mr-24 lg:text-lg lg:w-96;
+  }
+  .faqs h3 {
+    @apply text-xl text-primary mt-7 mb-5 font-semibold lg:text-2xl dark:text-white;
+  }
+  .faqs p {
+    @apply text-base font-normal dark:text-white;
+  }
+  .about-us p {
+    @apply text-sm font-medium mt-2 lg:text-xl lg:pl-8;
+  }
+}

@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  darkMode: 'class',
   content: ["./public/index.html", "./src/**/*.{html,js}"],
   theme: {
     backgroundColor: theme =>({
@@ -30,13 +31,14 @@ module.exports = {
 			  'miami': "url('../img/miami.jpg')",
 			  'switzerland': "url('../img/switzerland.jpg')",
 			  'bali': "url('../img/bali.jpg')",
-			  'norway': "url('../img/norway.jpg')",
 			  'chicago': "url('../img/chicago.jpg')",
 			  'europe': "url('../img/europe.jpg')",
 			  'iceland': "url('../img/iceland.jpg')",
       }
     },
   },
-  plugins: [],
+  plugins: [
+    require('tailwind-scrollbar-hide')
+  ],
 };
 
